@@ -1,3 +1,5 @@
+package coursera.AlgorithmsSpecialization;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main {
+public class findKthLargestItem {
 
     public static List<Integer> data = new ArrayList();
 

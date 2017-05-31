@@ -1,6 +1,4 @@
-/**
- * Created by udhay on 13/5/17.
- */
+package coursera.AlgorithmsSpecialization;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -44,14 +42,6 @@ public class CountComparison {
         } else {
             size = r - l;
         }
-
-//        System.out.println();
-//        System.out.println(ele + " is the pivot");
-        //       System.out.println(size + " is the count");
-//        for (int k : data) {
-//            System.out.print(k + ", ");
-//        }
-//        System.out.println();
         return i - 1;
     }
 
@@ -92,7 +82,7 @@ public class CountComparison {
 
             Arrays.sort(data1);
 
-            System.out.println("All the elements");
+
             for (int k : data1) {
                 System.out.print(k + " ,");
             }
@@ -130,7 +120,9 @@ public class CountComparison {
 
         int k = 0;
         try {
-            Scanner in = new Scanner(new FileReader("/home/udhay/Downloads/QuickSort.txt"));
+
+
+            Scanner in = new Scanner(new FileReader("data/QuickSort.txt"));
 
             while (in.hasNext()) {
                 data.add(in.nextInt());
@@ -142,8 +134,6 @@ public class CountComparison {
         }
 
         int[] data1 = data.stream().mapToInt(i -> i).toArray();
-
-
         cc.size = 0;
         cc.data = data1;
         cc.quickSort(0, data1.length - 1);
